@@ -83,7 +83,7 @@ def mars_hemisphere(browser):
         title = soupify.find("h2",{"class":"title"}).text.split("Enhanced")[0].strip()
         datanew = {"img_url":img_url_mars,"title":title}
         hemisphere_image_urls.append(datanew)
-        return hemisphere_image_urls
+    return hemisphere_image_urls
 
 
        
