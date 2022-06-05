@@ -7,7 +7,7 @@ import time
 import pandas as pd
 def scrape_all():
     executable_path = {'executable_path':ChromeDriverManager().install()}
-    browser = Browser('chrome',**executable_path,headless=False)
+    browser = Browser('chrome',**executable_path,headless=True)
     news_title, news_paragraph = mars_news(browser)
     # hemisphere_image_urls = mars_hemisphere(browser),
     data = {
@@ -58,7 +58,7 @@ def mars_facts():
         return None    
     df.columns = ['Description','Mars','Earth']
     df.set_index('Description',inplace = True)
-    return df.to_html()
+    return df.to_html(classes = "table table-striped table-hover",index=False)
 
 def mars_hemisphere(browser):
     url = 'https://marshemispheres.com/'
@@ -80,14 +80,10 @@ def mars_hemisphere(browser):
         # 3. Write code to retrieve the image urls and titles for each hemisphere.
         img = soupify.find("img",{"class":"wide-image"})["src"]
         img_url_mars = url+img
-        title = soupify.find("h2",{"class":"title"}).text.split("Enhanced")[0].strip()
+        title = soupify.find("h2",{"class":"title"}).text
         datanew = {"img_url":img_url_mars,"title":title}
         hemisphere_image_urls.append(datanew)
     return hemisphere_image_urls
-
-
-       
-
 
 if __name__ == "__main__":
     print(scrape_all())    
