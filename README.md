@@ -53,7 +53,7 @@ For further adding bootstrap components to the web page, used the following:
 
 - Added alert success class with alert dismissible feature which allows us to close the box. Enhanced the features of the table by adding the classes table-striped,table-hover. The Paragraph content has been enhanced by using the class lead.<br>
 <img src = "https://github.com/fathi129/Mission-to-Mars/blob/master/Screenshots%20for%20Mission%20to%20mars/lead.png" width = 400><br> 
--The grid layouts have been applied for the images, got four equal-width columns starting at desktops and scaling to large desktops by using `.col-md-3`, which are thumbnailed using the class thumbnail.<br> 
+- The grid layouts have been applied for the images, got four equal-width columns starting at desktops and scaling to large desktops by using `.col-md-3`, which are thumbnailed using the class thumbnail.<br> 
 <img src = "https://github.com/fathi129/Mission-to-Mars/blob/master/Screenshots%20for%20Mission%20to%20mars/imggrid.png" width = 600><br> 
 <img src = "https://github.com/fathi129/Mission-to-Mars/blob/master/Screenshots%20for%20Mission%20to%20mars/Bootstrap_table.png" width = 400><br> 
 <img src = "https://github.com/fathi129/Mission-to-Mars/blob/master/Screenshots%20for%20Mission%20to%20mars/Bootsrap%20grid%20image.png" width = 650><br> 
