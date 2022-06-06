@@ -30,7 +30,10 @@ From the source website we collected teh images and titles and stored in out web
 
 Using the Python and HTML skills, we will add the code we created previously in our scraping.py file, update our Mongo database, and modify our index.html file so the webpage contains all the information we collected in the module as well as the full-resolution image and title for each hemisphere image.
 In the def scrape_all() function in our scraping.py file, created a new dictionary in the data dictionary to hold a list of dictionaries with the URL string and title of each hemisphere image.A function that will scrape the hemisphere data by using our code from deliverable 1. At the end of the function, return the scraped data as a list of dictionaries with the URL string and title of each hemisphere image.
-Run the app.py file in VScode, then when we check our Mongo database to make sure all the data are retrieved and stored.
+Run the app.py file in VScode, then when we check our Mongo database to make sure all the data are retrieved and stored.<br>
+
+<img src = "https://github.com/fathi129/Mission-to-Mars/blob/master/Screenshots%20for%20Mission%20to%20mars/scrapingcode.png" width = 500><br >
+<img src = "https://github.com/fathi129/Mission-to-Mars/blob/master/Screenshots%20for%20Mission%20to%20mars/mongodb.png" width = 500><br >
 we need to Modify the index.html file to access our database, and retrieve the img_url and title as we loop through the dictionary in the database.
 From the source website we collected teh images and titles and stored in out web page.<br>
 
@@ -48,11 +51,15 @@ Choose various mobile devices to test the webpage, as shown in the following ima
 <img src = "https://github.com/fathi129/Mission-to-Mars/blob/master/Screenshots%20for%20Mission%20to%20mars/Bootsrap_Responsiveness.png" width = 600><br> 
 For further adding adding bootstrap components in the web page used the following:
 - Changed the color of  Scrape New Data button to red color.Changed the background color of the container and jumbotron class.
+<img src = "https://github.com/fathi129/Mission-to-Mars/blob/master/Screenshots%20for%20Mission%20to%20mars/background.png" width = 600><br> 
 - Tool tip has been added under the button which gives the information what we have to do.Added the page header class,which gives horizontal line to the text.<br>
+<img src = "https://github.com/fathi129/Mission-to-Mars/blob/master/Screenshots%20for%20Mission%20to%20mars/button.png" width = 700><br> 
 <img src = "https://github.com/fathi129/Mission-to-Mars/blob/master/Screenshots%20for%20Mission%20to%20mars/bootstrap_Tooltip.png" width = 600><br> 
 
-- Added alert success class with alert dismissible feature which allows us to close the box. Enhanced the features of the table by adding the classes table-striped,table-hover.The Paragraph content has been enhanced by using the class lead.
+- Added alert success class with alert dismissible feature which allows us to close the box. Enhanced the features of the table by adding the classes table-striped,table-hover.The Paragraph content has been enhanced by using the class lead.<br>
+<img src = "https://github.com/fathi129/Mission-to-Mars/blob/master/Screenshots%20for%20Mission%20to%20mars/lead.png" width = 400><br> 
 -For the images,the grid layouts has been applied,Get four equal-width columns starting at desktops and scaling to large desktops by using `.col-md-3`. which are thumbnailed using the class thumbnail.<br> 
+<img src = "https://github.com/fathi129/Mission-to-Mars/blob/master/Screenshots%20for%20Mission%20to%20mars/imggrid.png" width = 600><br> 
 <img src = "https://github.com/fathi129/Mission-to-Mars/blob/master/Screenshots%20for%20Mission%20to%20mars/Bootstrap_table.png" width = 400><br> 
 <img src = "https://github.com/fathi129/Mission-to-Mars/blob/master/Screenshots%20for%20Mission%20to%20mars/Bootsrap%20grid%20image.png" width = 650><br> 
 
